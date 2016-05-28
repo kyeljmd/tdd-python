@@ -66,7 +66,7 @@ class ListAndItemModelsTest(TestCase):
 		self.assertEqual(second_saved_item.text, 'Item the second')
 		self.assertEqual(second_saved_item.list, list_)
 
-class LiveViewTest(TestCase):
+class ListViewTest(TestCase):
 
 	def test_uses_list_template(self):
 		response = self.client.get('/lists/the-only-list-in-the-world/')
